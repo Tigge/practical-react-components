@@ -44,7 +44,8 @@ export const DemoComponent = ({}) => {
   } = useToasts()
   const showSuccess = () =>
     showSuccessToast({
-      label: 'Successfully set parameter',
+      label:
+        'Successfully set parameter, so now we are super happy with ourselves and tell you about it in an elaborate way',
       onClose: id => {
         console.log('Dismissed toast with ID: %o', id)
       },
@@ -78,7 +79,8 @@ export const DemoComponent = ({}) => {
     })
   const showError = () =>
     showErrorToast({
-      label: 'Oops, the server responded with 403',
+      label:
+        'Oops, the server responded with 403 oh noes oh noes oh noes oh noes oh noes oh noes oh noes oh noes oh noes ',
     })
   const showErrorWithMessage = () =>
     showErrorToast({
